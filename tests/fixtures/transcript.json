@@ -1,0 +1,10 @@
+{
+  "duration": 22,
+  "provider": "synthetic_fixture",
+  "is_mock": true,
+  "segments": [
+    {"id": "s000000", "start": 2, "end": 7, "text": "Esto es una prueba sintética. Nadie esperaba que resolviéramos el reto juntos esta noche."},
+    {"id": "s000001", "start": 7, "end": 12, "text": "Me emocioné mucho al ver el resultado, porque al principio pensé que no podríamos terminar."},
+    {"id": "s000002", "start": 12, "end": 17, "text": "Pero lo logramos: cada persona ayudó y al final el equipo completó el reto a tiempo."}
+  ]
+}

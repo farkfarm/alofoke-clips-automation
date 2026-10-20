@@ -1,0 +1,24 @@
+mode = "local"
+data_dir = "data/local"
+
+[transcription]
+model_path = "models/faster-whisper-small"
+device = "cuda"
+compute_type = "int8_float16"
+cpu_threads = 6
+beam_size = 5
+cpu_fallback = true
+
+[analysis]
+backend = "ollama"
+base_url = "http://127.0.0.1:11434"
+model = "qwen3:4b"
+unload_after_analysis = true
+
+[media]
+threads = 4
+preset = "veryfast"
+framing = "fit"
+
+[gpu]
+allow_paid = false

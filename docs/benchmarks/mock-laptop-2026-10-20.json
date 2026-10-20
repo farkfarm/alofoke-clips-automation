@@ -1,0 +1,58 @@
+{
+  "job_id": "5eebb3b8ee2b4d9ba2f5a166699114fd",
+  "mode": "mock",
+  "started_at": "2026-10-20T21:19:50.857922+00:00",
+  "finished_at": "2026-10-20T21:19:57.206187+00:00",
+  "status": "completed",
+  "source_duration_seconds": 600.0,
+  "candidate_count": 1,
+  "selected_this_attempt": 1,
+  "stage_seconds": {
+    "capabilities": 0.24701890000142157,
+    "ingestion": 0.13353409996489063,
+    "audio_extraction": 0.32913609995739534,
+    "transcription": 0.03528099996037781,
+    "analysis": 0.017129699990618974,
+    "selection": 0.012957099999766797,
+    "subtitles": 0.01042760000564158,
+    "clip_rendering": 4.394400099990889,
+    "storage": 1.099176699994132
+  },
+  "total_seconds": 6.3487794999964535,
+  "peak_process_tree_rss_bytes": 318746624,
+  "peak_device_gpu_used_mib": null,
+  "gpu_memory_samples": 0,
+  "errors": [],
+  "warnings": [],
+  "media_versions": {
+    "ffmpeg": "ffmpeg version 9.0.2-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 9.0.2-essentials_build-www.gyan.dev Copyright (c) 2007-2026 the FFmpeg developers"
+  },
+  "source_kind": "synthetic static color field and tone; no recorded Spanish speech",
+  "ai": "explicit mock transcript and analysis fixtures; no models ran",
+  "output": {
+    "clips": 1,
+    "duration_seconds": 15.5,
+    "width": 1080,
+    "height": 1920
+  },
+  "hardware": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10",
+    "cpu": "12th Gen Intel(R) Core(TM) i7-1255U",
+    "physical_cores": 10,
+    "logical_cores": 12,
+    "ram_total_bytes": 12596011008,
+    "nvidia": {
+      "available": false,
+      "reason": "nvidia-smi not found; no NVIDIA GPU assumed"
+    },
+    "cuda": {
+      "ctranslate2_available": false,
+      "inference_validated": false
+    }
+  },
+  "real_model_throughput_validated": false,
+  "production_cost_validated": false,
+  "actual_cloud_invoice_usd": null
+}

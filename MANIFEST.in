@@ -1,0 +1,10 @@
+include AGENTS.md .env.example config.example.toml config.local.example.toml requirements-dev.lock
+recursive-include docs *.md *.json
+recursive-include scripts *.py
+recursive-include tests *.py *.json
+exclude .env
+prune data
+prune models
+prune .tools
+prune .venv
+global-exclude __pycache__ *.py[cod]

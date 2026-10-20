@@ -1,0 +1,18 @@
+{
+  "candidates": [{
+    "segment_ids": ["s000000", "s000001", "s000002"],
+    "category": "logro",
+    "title": "Cada persona ayudó y el equipo completó el reto",
+    "caption": "Prueba sintética: el texto de ejemplo relata cómo el equipo completó el reto a tiempo.",
+    "confidence": 0.95,
+    "factors": {
+      "hook": {"value": 4, "reason": "El texto abre con una expectativa inesperada sobre el reto."},
+      "emotion": {"value": 4, "reason": "La frase central expresa emoción y una duda previa."},
+      "novelty": {"value": 3, "reason": "El resultado conjunto contrasta con la expectativa inicial."},
+      "payoff": {"value": 4, "reason": "La última frase resuelve el reto con un resultado concreto."},
+      "context": {"value": 5, "reason": "Las frases incluyen planteamiento, dificultad y resolución."}
+    },
+    "evidence": [{"segment_id": "s000002", "quote": "el equipo completó el reto a tiempo"}]
+  }],
+  "abstention_reason": ""
+}

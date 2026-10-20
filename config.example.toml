@@ -1,0 +1,59 @@
+# All paths resolve relative to this file. Default mode makes no AI/network calls.
+mode = "mock"
+data_dir = "data"
+
+[media]
+ffmpeg = "ffmpeg"
+ffprobe = "ffprobe"
+timeout_seconds = 7200
+max_input_hours = 8
+threads = 2
+preset = "veryfast"
+crf = 21
+# fit preserves all of a landscape scene; crop uses a fixed center crop.
+framing = "fit"
+fps = 30
+keep_audio = false
+
+[transcription]
+# LOCAL requires pre-downloaded CTranslate2 weights in this directory.
+model_path = "models/faster-whisper-small"
+device = "cpu"
+compute_type = "int8"
+cpu_threads = 4
+beam_size = 5
+cpu_fallback = true
+
+[analysis]
+backend = "ollama" # or llama_cpp
+base_url = "http://127.0.0.1:11434"
+model = "qwen3:4b" # example, not a measured hardware recommendation
+timeout_seconds = 600
+window_seconds = 180
+overlap_seconds = 60
+max_window_chars = 18000
+max_output_tokens = 4096
+max_candidates_per_window = 4
+unload_after_analysis = true
+
+[selection]
+min_seconds = 15
+max_seconds = 60
+max_clips = 5
+min_score = 70
+min_confidence = 0.75
+min_words = 15
+min_speech_ratio = 0.35
+padding_seconds = 0.25
+text_duplicate_threshold = 0.88
+
+[gpu]
+allow_paid = false
+endpoint_id = ""
+timeout_seconds = 900
+poll_seconds = 2
+audio_chunk_seconds = 45
+# Estimated rate for YOUR endpoint, only if known. Zero means unknown, not free.
+usd_per_second = 0.0
+monthly_budget_usd = 50
+max_job_usd = 2
